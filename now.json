@@ -1,0 +1,10 @@
+{
+  "name": "trendit",
+  "version": 2,
+  "public": true,
+  "builds": [
+    { "src": "*.*", "use": "@now/static" },
+    { "src": "assets/*.*", "use": "@now/static" }
+  ],
+  "routes": [{ "src": "/(.*)/(.*)?", "dest": "/$1/$2" }]
+}
