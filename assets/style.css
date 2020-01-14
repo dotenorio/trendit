@@ -9,7 +9,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 30px);
 }
 .content h1 {
   margin-bottom: 25px;
