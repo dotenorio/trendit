@@ -3,11 +3,9 @@ body {
   margin: 15px;
 }
 .content {
-  max-width: 70vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
   height: calc(100vh - 30px);
 }
