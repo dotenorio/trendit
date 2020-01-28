@@ -1,4 +1,8 @@
 function trendIt(text, separator) {
+  if (inverse.checked) {
+    text = text.split('').reverse().join('');
+  }
+
   let newText = "";
   for (let i in text) {
     newText += text[i];
@@ -12,6 +16,11 @@ const output = document.getElementById("output");
 const trendit = document.getElementById("trendit");
 const copy = document.getElementById("copy");
 const tweet = document.getElementById("tweet");
+const inverse = document.getElementById("inverse");
+
+inverse.onclick = () => {
+  trendit.click();
+}
 
 newline.onclick = () => {
   trendit.click();
